@@ -42,13 +42,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-42-Xja">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-42-Xja">
                                 <rect key="frame" x="159" y="117" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocK-wC-XIM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocK-wC-XIM">
                                 <rect key="frame" x="87" y="206" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -64,6 +64,12 @@
                             <constraint firstItem="Rxj-Xd-S3f" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qX6-jP-2FX"/>
                             <constraint firstItem="nG8-hC-Oph" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wYl-8Y-AR8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fDK-42-Xja"/>
+                                <exclude reference="ocK-wC-XIM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="countDownLabel" destination="nG8-hC-Oph" id="2UB-qX-XM9"/>

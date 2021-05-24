@@ -32,7 +32,7 @@ class TimerViewController: UIViewController, TimerView {
     
     func updateData(number: Int) {
         print(String(number))
-        textF.text = String(number)
+        countDownLabel.text = String(number)
     }
     
 
