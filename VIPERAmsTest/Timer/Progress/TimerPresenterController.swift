@@ -36,8 +36,14 @@ class TimerPresenterController: TimerPresenter {
     
     func interactorResults(number: Int) {
         view?.updateData(number: number)
-        number % 2 == 0 ? view?.setColorGreen() : view?.setColorRed()
+        checkEvenNumber(number: number) ? view?.setColorGreen() : view?.setColorRed()
     }
     
+    
+    
+    //we can call this method in test to check view logic
+    func checkEvenNumber(number: Int) -> Bool {
+        return number % 2 == 0
+    }
     
 }
