@@ -9,11 +9,13 @@ import Foundation
 
 protocol TimerView: AnyObject {
     
-    var presenter: TimerPresenter? { get set }
+//    var presenter: TimerPresenter? { get set }
     
     func updateData(number: Int)
     
     func setColorGreen()
     
     func setColorRed()
+    
+    func dismissView()
 }

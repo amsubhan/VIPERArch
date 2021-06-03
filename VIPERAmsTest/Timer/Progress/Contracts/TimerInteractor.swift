@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TimerInteractor: AnyObject {
-    var presenter: TimerPresenter? { get set }
+//    var presenter: TimerPresenter? { get set }
     
     func fetchTimerNumbers()
     

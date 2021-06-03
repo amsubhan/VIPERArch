@@ -36,12 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxj-Xd-S3f">
-                                <rect key="frame" x="186" y="474" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-42-Xja">
                                 <rect key="frame" x="159" y="117" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,7 +55,6 @@
                             <constraint firstItem="nG8-hC-Oph" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Jqx-TL-LvC"/>
                             <constraint firstItem="wd1-qW-j1w" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SaI-gU-9h4"/>
                             <constraint firstItem="5Cm-HI-bhH" firstAttribute="top" secondItem="wd1-qW-j1w" secondAttribute="bottom" constant="20" id="Vg2-6K-dsZ"/>
-                            <constraint firstItem="Rxj-Xd-S3f" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qX6-jP-2FX"/>
                             <constraint firstItem="nG8-hC-Oph" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wYl-8Y-AR8"/>
                         </constraints>
                         <variation key="default">
@@ -74,7 +67,6 @@
                     <connections>
                         <outlet property="countDownLabel" destination="nG8-hC-Oph" id="2UB-qX-XM9"/>
                         <outlet property="imgV" destination="ocK-wC-XIM" id="VTL-9i-Min"/>
-                        <outlet property="newLabel" destination="Rxj-Xd-S3f" id="zru-sv-hCR"/>
                         <outlet property="textF" destination="fDK-42-Xja" id="9jH-aj-XaQ"/>
                     </connections>
                 </viewController>

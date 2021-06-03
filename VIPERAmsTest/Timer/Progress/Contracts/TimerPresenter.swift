@@ -8,13 +8,15 @@
 import Foundation
 
 protocol TimerPresenter: AnyObject {
-    var router: TimerRouter? { get set }
-    var interactor: TimerInteractor?  { get set }
-    var view: TimerView? { get set }
+//    var router: TimerRouter? { get set }
+//    var interactor: TimerInteractor?  { get set }
+//    var view: TimerView? { get set }
     
     func interactorResults(number: Int )
     
     func stopTimer()
     
     func restartTimer()
+    
+    func dismissView()
 }

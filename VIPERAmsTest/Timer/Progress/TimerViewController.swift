@@ -16,7 +16,7 @@ class TimerViewController: UIViewController, TimerView {
     @IBOutlet weak var newLabel: UILabel!
     
     var presenter: TimerPresenter?
-    
+            
     static var storyboardName = "StartTimerView"
     
     static var className = "TimerViewController"
@@ -26,13 +26,17 @@ class TimerViewController: UIViewController, TimerView {
     }
     
     @IBAction func stopTimerAction(_ sender: Any) {
-        presenter?.stopTimer()
-        self.dismiss(animated: true, completion: nil)
+        presenter?.dismissView()
     }
     
     func updateData(number: Int) {
         print(String(number))
         countDownLabel.text = String(number)
+    }
+    
+    func dismissView(){
+        presenter?.stopTimer()
+        self.dismiss(animated: true, completion: nil)
     }
     
 
@@ -42,6 +46,7 @@ class TimerViewController: UIViewController, TimerView {
         view.backgroundColor = .yellow
         countDownLabel.textColor = .green
         countDownLabel.text = "N/A"
+        
     }
     
     func setColorGreen() {

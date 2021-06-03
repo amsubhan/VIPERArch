@@ -11,9 +11,18 @@ import Foundation
 
 protocol TimerRouter: AnyObject {
 //    static func initializeTimer() -> TimerRouter
+    func dismissVC()
 }
 
 
+class TimerWire: TimerRouter {
+    
+    weak var presenter: TimerPresenter?
+    
+    func dismissVC() {
+        presenter?.dismissView()
+    }
+}
 //class TimeWire : TimerRouter {
 //
 //    static func initializeTimer() -> TimerRouter {

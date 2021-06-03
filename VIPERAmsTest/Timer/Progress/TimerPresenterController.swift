@@ -9,6 +9,16 @@ import Foundation
 
 
 class TimerPresenterController: TimerPresenter {
+    func dismissVC() {
+        
+    }
+    
+
+    
+    func dismissView() {
+        view?.dismissView()
+    }
+    
     
     func restartTimer() {
         interactor?.restartTimer()

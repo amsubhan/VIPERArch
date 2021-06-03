@@ -47,6 +47,7 @@ class StartTimerWire : StartTimerRouter{
         
         var presenter = TimerPresenterController()
     
+        var router = TimerWire()
         
         view.presenter = presenter
         
@@ -54,6 +55,8 @@ class StartTimerWire : StartTimerRouter{
         
        let presentingViewController = presentingVC as! UIViewController
         presenter.view = view//TimerViewController.getViewController() as! TimerViewController
+        presenter.router = router
+        router.presenter = presenter
         
         presentingViewController.present(view, animated: true, completion: nil)
         presenter.interactor = interactor
